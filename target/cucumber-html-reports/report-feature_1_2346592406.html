@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/resources/fetures/Booking/get_booking.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Reto Tecnico Booking</td>
+            <td>04 Aug 2024, 10:43</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/resources/fetures/Booking/get_booking.feature</td>
+          <td >0</td>
+          <td      class="failed"    >14</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">14</td>
+
+          <td >0</td>
+          <td  class="failed"    >2</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="0">0.000</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/resources/fetures/Booking/get_booking.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Get booking from the page https://restful-booker.herokuapp.com/</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;create_booking.feature@Success&quot;)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>10:43:21.656 &gt;&gt; lock acquired, begin callSingle: classpath:features/setup.feature
+10:43:21.657 src/test/resources/fetures/Booking/get_booking.feature:6
+* call read(&quot;create_booking.feature@Success&quot;)
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1815678882.html">@Success</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">consult a booking</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>10:43:21.657 src/test/resources/fetures/Booking/get_booking.feature:10
+Given header Accept = 'application/json'
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">def id = serviceContanst.getBookingId()</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>10:43:21.658 src/test/resources/fetures/Booking/get_booking.feature:11
+And def id = serviceContanst.getBookingId()
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com&quot; + &quot;/booking/&quot; + id</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>10:43:21.658 src/test/resources/fetures/Booking/get_booking.feature:12
+And url &quot;https://restful-booker.herokuapp.com&quot; + &quot;/booking/&quot; + id
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>10:43:21.658 src/test/resources/fetures/Booking/get_booking.feature:13
+When method GET
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13
+src/test/resources/fetures/Booking/get_booking.feature:14</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>10:43:21.659 src/test/resources/fetures/Booking/get_booking.feature:14
+When print response
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13
+src/test/resources/fetures/Booking/get_booking.feature:14
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13
+src/test/resources/fetures/Booking/get_booking.feature:14
+src/test/resources/fetures/Booking/get_booking.feature:15</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>10:43:21.659 src/test/resources/fetures/Booking/get_booking.feature:15
+Then status 200
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:10
+src/test/resources/fetures/Booking/get_booking.feature:11
+src/test/resources/fetures/Booking/get_booking.feature:12
+src/test/resources/fetures/Booking/get_booking.feature:13
+src/test/resources/fetures/Booking/get_booking.feature:14
+src/test/resources/fetures/Booking/get_booking.feature:15
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+    
+<div class="brief failed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read(&quot;create_booking.feature@Success&quot;)</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>10:43:21.665 &gt;&gt; lock acquired, begin callSingle: classpath:features/setup.feature
+10:43:21.667 src/test/resources/fetures/Booking/get_booking.feature:6
+* call read(&quot;create_booking.feature@Success&quot;)
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3988580657.html">@SuccessNotFound</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check reservation with parameter not found</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details  in ">
+    
+
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header Accept = 'application/json'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>10:43:21.668 src/test/resources/fetures/Booking/get_booking.feature:19
+Given header Accept = 'application/json'
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">url &quot;https://restful-booker.herokuapp.com&quot; + &quot;/booking/&quot; + &quot;xxxxxxxx&quot;</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>10:43:21.668 src/test/resources/fetures/Booking/get_booking.feature:20
+And url &quot;https://restful-booker.herokuapp.com&quot; + &quot;/booking/&quot; + &quot;xxxxxxxx&quot;
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>10:43:21.668 src/test/resources/fetures/Booking/get_booking.feature:21
+When method GET
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">When</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>10:43:21.668 src/test/resources/fetures/Booking/get_booking.feature:22
+When print response
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 404</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22
+src/test/resources/fetures/Booking/get_booking.feature:23</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>10:43:21.668 src/test/resources/fetures/Booking/get_booking.feature:23
+Then status 404
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22
+src/test/resources/fetures/Booking/get_booking.feature:23
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response contains 'Not Found'</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-35">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22
+src/test/resources/fetures/Booking/get_booking.feature:23
+src/test/resources/fetures/Booking/get_booking.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>10:43:21.669 src/test/resources/fetures/Booking/get_booking.feature:24
+And match response contains 'Not Found'
+&gt;&gt; src/test/resources/fetures/Booking/get_booking.feature:18
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: features/setup.feature
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:     karate.configure('connectTimeout', 10000);
+03:     karate.configure('readTimeout', 10000);
+04: 
+05:     config = karate.callSingle('classpath:features/setup.feature');
+06:     return {
+07:         api: {
+08:             baseUrl: 'https://restful-booker.herokuapp.com'
+09:         },
+10:         user: {
+11:             name: 'karate'
+12:         },
+13:         config
+14:     };
+15: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: features/setup.feature
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:64)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:731)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:229)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:186)
+- &lt;js&gt;.fn(Unnamed:5)
+
+src/test/resources/fetures/Booking/get_booking.feature:6
+src/test/resources/fetures/Booking/get_booking.feature:19
+src/test/resources/fetures/Booking/get_booking.feature:20
+src/test/resources/fetures/Booking/get_booking.feature:21
+src/test/resources/fetures/Booking/get_booking.feature:22
+src/test/resources/fetures/Booking/get_booking.feature:23
+src/test/resources/fetures/Booking/get_booking.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

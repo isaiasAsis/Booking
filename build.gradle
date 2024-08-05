@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    implementation 'io.karatelabs:karate-junit5:1.5.0.RC4'
+    implementation 'net.masterthought:cucumber-reporting:4.11.2'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.51'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    systemProperty "baseUrl", System.properties.getProperty("baseUrl")
+    systemProperty "user", System.properties.getProperty("user")
+}
